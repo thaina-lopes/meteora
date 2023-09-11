@@ -1,0 +1,24 @@
+@import url("styles/cabecalho.css");
+@import url("styles/banner.css");
+@import url("styles/categorias.css");
+@import url("styles/produtos.css");
+@import url("styles/facilidades.css");
+@import url("styles/newsletter.css");
+@import url("styles/footer.css");
+@import url("styles/carrossel.css");
+@import url("styles/modal.css");
+
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --lilas: #9353FF;
+    --verde: #DAFF01;
+    --cinza-escuro: #212529;
+    --fonte-principa: "Inter";
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principa);
+}

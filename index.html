@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./styles/cabecalho.css">
+    <script src="modal.js" defer></script>
+    <script src="modal-email.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <img class="logo__desktop" src="/img/logo_desktop.svg" alt="Logo da Meteora">
+        <img class="logo__tablet" src="/img/logo_tablet.svg" alt="Logo da Meteora">
+        <img class="logo__mobile" src="/img/logo_mobile.svg" alt="Logo da Meteora">
+        <ul class="lista-menu">
+            <li class="lista-menu__item"><a href="index.html" class="lista-menu__link">Home</a></li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">Nossas Lojas</a></li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">Novidades</a></li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">Promoções</a></li>
+        </ul>
+        <ul class="lista-buscar">
+            <input type="search" class="lista-buscar-pesquisa" placeholder="Digite o produto">
+            <a href="#" class="lista-buscar-botao">Buscar</a>
+        </ul>
+
+        <div class="container__menu">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__menu-aberto">
+                <span class="cabecalho__menu-hamburguer"></span>
+            </label>
+            <ul class="lista-menu-mobile">
+                <li class="lista-menu-mobile__item"><a href="#" class="lista-menu-mobile__link">Home</a></li>
+                <li class="lista-menu-mobile__item"><a href="#" class="lista-menu-mobile__link">Lojas</a></li>
+                <li class="lista-menu-mobile__item"><a href="#" class="lista-menu-mobile__link">Novidades</a></li>
+                <li class="lista-menu-mobile__item"><a href="#" class="lista-menu-mobile__link">Promoções</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="pesquisa-mobile">
+        <ul class="lista-buscar-mobile">
+            <input type="search" class="lista-buscar-pesquisa-mobile" placeholder="Digite o produto">
+            <a href="#" class="lista-buscar-botao-mobile">Buscar</a>
+        </ul>
+    </section>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="imagem-desktop" src="/img/banner_desktop.png" alt="primeiro slide desktop">
+            <img class="imagem-tablet" src="/img/banner_tablet.svg" alt="primeiro slide tablet">
+            <img class="imagem-mobile" src="/img/banner_mobile.svg" alt="primeiro slide mobile">
+          </div>
+          <div class="carousel-item">
+            <img class="imagem-desktop" src="/img/banner_desktop02.svg" alt="segundo slide desktop">
+            <img class="imagem-tablet" src="/img/banner_tablet02.svg" alt="segundo slide tablet">
+            <img class="imagem-mobile" src="/img/banner_mobile02.svg" alt="segundo slide mobile">
+            <div class="carousel-caption h-50">
+                <div class="texto-grande d-none d-md-block text-right">
+                    <h3 class="titulo-carrossel">COLEÇÃO ATEMPORAL</h3>
+                    <p class="frase-carrossel">Estilo e qualidade para durar.</p>
+                </div>
+                <div class="texto-pequeno d-block d-md-none text-center">
+                    <h3 class="titulo-carrossel">COLEÇÃO ATEMPORAL</h3>
+                    <p class="frase-carrossel">Estilo e qualidade para durar.</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="imagem-desktop" src="/img/banner_desktop03.svg" alt="terceiro slide desktop">
+            <img class="imagem-tablet" src="/img/banner_tablet03.svg" alt="terceiro slide tablet">
+            <img class="imagem-mobile" src="/img/banner_mobile03.svg" alt="terceiro slide mobile">
+            <div class="carousel-caption h-50">
+                <div class="texto-grande d-none d-md-block text-left">
+                    <h3 class="titulo-carrossel">COLEÇÃO ATEMPORAL</h3>
+                    <p class="frase-carrossel">Alto impacto visual, baixo impacto ambiental!</p>
+                </div>
+                <div class="texto-pequeno d-block d-md-none text-center">
+                    <h3 class="titulo-carrossel">COLEÇÃO ATEMPORAL</h3>
+                    <p class="frase-carrossel">Alto impacto visual, baixo impacto ambiental!</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+    <h2 class="categorias-titulo">Busque por categoria:</h2>
+    <section class="categorias">
+            <a href="#"><img src="/img/categorias/camisetas.svg" alt="camisetas" class="categorias-itens"></a>
+            <a href="#"><img src="/img/categorias/bolsas.svg" alt="bolsas" class="categorias-itens"></a>
+            <a href="#"><img src="/img/categorias/calcados.svg" alt="calcados" class="categorias-itens"></a>
+            <a href="#"><img src="/img/categorias/calcas.svg" alt="calcas" class="categorias-itens"></a>
+            <a href="#"><img src="/img/categorias/casacos.svg" alt="casacos" class="categorias-itens"></a>
+            <a href="#"><img src="/img/categorias/oculos.svg" alt="oculos" class="categorias-itens"></a>
+    </section>
+
+    <h2 class="categorias-titulo">Produtos que estão bombando!</h2>
+    <section class="produtos">
+        <div class="produtos__container">
+            <img src="/img/produtos/camiseta.svg" alt="camiseta" class="produtos__imagem">
+            <h2 class="titulo__produto">Camiseta Conforto</h2>
+            <p class="descricao__produto">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</h3>
+            <p class="preco">R$ 70,00</p>
+            <button class="botao__ver-mais">Ver mais</button>
+        </div>
+
+        <div class="produtos__container">
+            <img src="/img/produtos/calca.svg" alt="Calça Alfaiataria" class="produtos__imagem">
+            <h2 class="titulo__produto">Calça Alfaiataria</h2>
+            <p class="descricao__produto">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</h3>
+            <p class="preco">R$ 180,00</p>
+            <button class="botao__ver-mais">Ver mais</button>
+        </div>
+
+        <div class="produtos__container">
+            <img src="/img/produtos/tenis.svg" alt="Tênis Chunky" class="produtos__imagem">
+            <h2 class="titulo__produto">Tênis Chunky</h2>
+            <p class="descricao__produto">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</h3>
+            <p class="preco">R$ 250,00</p>
+            <button class="botao__ver-mais">Ver mais</button>
+        </div>
+
+        <div class="produtos__container">
+            <img src="/img/produtos/Jaqueta.svg" alt="Jaqueta Jeans" class="produtos__imagem">
+            <h2 class="titulo__produto">Jaqueta Jeans</h2>
+            <p class="descricao__produto">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</h3>
+            <p class="preco">R$ 150,00</p>
+            <button id="open-modal" class="botao__ver-mais">Ver mais</button>
+        </div>
+
+        <div class="produtos__container">
+            <img src="/img/produtos/oculos.svg" alt="Óculos redondo" class="produtos__imagem">
+            <h2 class="titulo__produto">Óculos redondo</h2>
+            <p class="descricao__produto">Armação metálica em grafite com lentes arredondadas. Sem erro!</h3>
+            <p class="preco">R$ 120,00</p>
+            <button class="botao__ver-mais">Ver mais</button>
+        </div>
+
+        <div class="produtos__container">
+            <img src="/img/produtos/bolsa.svg" alt="bolsa" class="produtos__imagem">
+            <h2 class="titulo__produto">Bolsa Coringa</h2>
+            <p class="descricao__produto">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</h3>
+            <p class="preco">R$ 120,00</p>
+            <button class="botao__ver-mais">Ver mais</button>
+        </div>
+    </section>
+
+    <section class="facilidades">
+            <h2 class="facilidades__titulo">Conheça todas as nossas facilidades</h2>
+
+            <div class="facilidades__container">
+                <div class="facilidades__itens">
+                    <!--1º coluna-->
+                    <img src="img/pix.svg" alt="PIX">      
+                    <!--2º coluna-->
+                        <div class="facilidades__descricao">
+                            <h3 class="descrição__titulo">PAGUE PELO PIX</h3>
+                            <p class="descrição__texto">Ganhe 5% OFF em pagamentos via PIX</p>
+                        </div>  
+                </div> 
+
+                <div class="facilidades__itens">
+                    <!--1º coluna-->
+                    <img src="img/troca.svg" alt="troca grátis">      
+                    <!--2º coluna-->
+                        <div class="facilidades__descricao">
+                            <h3 class="descrição__titulo">TROCA GRÁTIS</h3>
+                            <p class="descrição__texto">Fique livre para trocar em até 30 dias.</p>
+                        </div>  
+                </div> 
+
+                <div class="facilidades__itens">
+                    <!--1º coluna-->
+                    <img src="img/sustentabilidade.svg" alt="sustentabilidade">      
+                    <!--2º coluna-->
+                        <div class="facilidades__descricao">
+                            <h3 class="descrição__titulo">SUSTENTABILIDADE</h3>
+                            <p class="descrição__texto">Moda responsável, que respeita o meio ambiente.</p>
+                        </div>  
+                </div> 
+            </div>
+
+
+    </section>
+
+    <section class="newsletter">
+            <div class="newsletter__container">
+                <h2 class="newsletter__titulo">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? <span class="newsletter__titulo-negrito">Cadastre-se!</span></h2>
+                <input type="search" class="newsletter__email" placeholder="Digite seu email">
+                <button id="open-modal-email" class="newsletter__botao">Enviar</button>
+            </div>
+    </section> 
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">2023 © Desenvolvido por Thainá Lopes | Projeto fictício sem fins comerciais.</h2>
+    </footer>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header"> 
+            <div class="modal-header__texto">
+                <img src="img/check-circle.svg" alt="check">
+                <h2 class="modal-titulo">Confira detalhes sobre o produto</h2>
+            </div>
+            <div>
+                <img src="img/X.svg" alt="fechar" id="close-modal">
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-imagem">
+                <img src="/img/produtos/Jaqueta.svg" alt="Jaqueta Jeans" class="modal__imagem">
+            </div>
+            <div class="modal-texto">
+                <h3 class="modal-produto">Jaqueta Jeans</h3>
+                <p class="modal-descricao">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                <hr class="modal-linha">
+                <p class="modal-preco">R$ 150,00</p>
+                <hr>
+
+                <h4 class="cores__titulo">Cores:</h4>
+                <ul class="cores__selecao">
+                    <li class="tipo-selecao"><input type="radio" name="cor" class="radio__azul-claro" value="Azul claro"/>Azul claro<br /></li>
+                    <li class="tipo-selecao"><input type="radio" name="cor" class="radio" value="Offwhite"/>Offwhite<br /></li>
+                    <li class="tipo-selecao"><input type="radio" name="cor" class="radio__preto" value="Preto"/>Preto<br /></li>
+                </ul>
+                <hr>
+
+                <h4 class="tamanho__titulo">Tamanho:</h4>
+                <ul class="tamanhos__selecao">
+                    <li class="tipo-selecao"><input type="radio"  name="tamanho" class="radio" value="P"/>PP<br /></li>
+                    <li class="tipo-selecao"><input type="radio"  name="tamanho" class="radio" value="PP"/>P<br /></li>
+                    <li class="tipo-selecao"><input type="radio"  name="tamanho" class="radio" value="M"/>M<br /></li>
+                    <li class="tipo-selecao"><input type="radio"  name="tamanho" class="radio" value="G"/>G<br /></li>
+                    <li class="tipo-selecao"><input type="radio"  name="tamanho" class="radio" value="GG"/>GG<br /></li>
+                </ul>
+
+                <button type="button" class="botao__sacola">Adicionar à sacola</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="fade-email" class="hide-email"></div>
+    <div id="modal-email" class="hide-email">
+        <div class="modal-header"> 
+            <div class="modal-header__texto">
+                <img src="img/check-circle.svg" alt="check">
+                <h2 class="modal-titulo">E-mail cadastrado com sucesso!</h2>
+            </div>
+            <div>
+                <img src="img/X.svg" alt="fechar" id="close-modal-email">
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-texto">
+                <h3 class="modal-texto-email">Em breve você receberá novidades exclusivas da Meteora.</h3>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+$('.carousel').carousel({
+  interval: false,
+});
+    </script>
+</body>
+
+</html>

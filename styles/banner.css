@@ -1,0 +1,44 @@
+
+.banner_desktop {
+    width: 100%;
+}
+
+.banner_mobile {
+    display: none;
+}
+
+.banner_tablet {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .banner_desktop {
+        display: none;
+    }
+
+    .banner_mobile {
+        display: none;
+    }
+    
+    .banner_tablet{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .banner_desktop {
+        display: none;
+    }
+
+    .banner_tablet {
+        display: none;
+    }
+    
+    .banner_mobile{
+        display: block;
+        width: 100%;
+    }
+}
