@@ -1,44 +1,44 @@
-
-.banner_desktop {
-    width: 100%;
+.imagem-desktop {
+  width: 100%;
+  overflow: hidden;
+  display: block;
 }
 
-.banner_mobile {
-    display: none;
+.imagem-mobile {
+  display: none;
 }
 
-.banner_tablet {
-    display: none;
+.imagem-tablet {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
+  .imagem-desktop {
+    display: none;
+  }
 
-    .banner_desktop {
-        display: none;
-    }
+  .imagem-mobile {
+    display: none;
+  }
 
-    .banner_mobile {
-        display: none;
-    }
-    
-    .banner_tablet{
-        display: block;
-        width: 100%;
-    }
+  .imagem-tablet {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .imagem-desktop {
+    display: none;
+  }
 
-    .banner_desktop {
-        display: none;
-    }
+  .imagem-tablet {
+    display: none;
+  }
 
-    .banner_tablet {
-        display: none;
-    }
-    
-    .banner_mobile{
-        display: block;
-        width: 100%;
-    }
+  .imagem-mobile {
+    display: block;
+    width: 100%;
+  }
 }
