@@ -1,20 +1,18 @@
-
 .rodape {
-    background-color: var(--preto);
-    padding: 2em 0;
-    text-align: center;
+  background-color: var(--preto);
+  padding: 2em 0;
+  text-align: center;
 }
 
 .rodape__titulo {
-    color: var(--branco);
-    font-size: 13px;
-    font-weight: 400;
+  color: var(--branco);
+  font-size: 13px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 450px) {
-
-    .rodape__titulo {
-        margin: 0 5em;
-        line-height: 1.5;
-    }
+  .rodape__titulo {
+    margin: 0 5em;
+    line-height: 1.5;
+  }
 }
